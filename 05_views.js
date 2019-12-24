@@ -48,7 +48,7 @@ const instructions = magpieViews.view_generator("instructions", {
             just $800,000 of the one million dollar, you will only get $800,000 for the next
             year.
             <br />
-            Unfortunately, you have only spent about $700,000 this year, but you know that in the
+            Unfortunately, you have not managed to spend the whole $1,000,000 for this year, but you know that in the
             next year you will need all the money you can get, because most of the medical
             devices for cancer surgery need to be maintained or even replaced.
             With a heavy heart but thinking about the sick children you decide that there is
@@ -68,7 +68,7 @@ const instructions2 = magpieViews.view_generator("instructions", {
   text: `   <br />
             <b>Imagine that</b> you are the head of the Sacred Heart Hospital and responsible for the financial
             matters. For the child cancer treatment section you have a budget of $1,000,000 per year.
-            Unfortunately, you have already spend all the money for this year, but you still have
+            Unfortunately, you have already spent all the money for this year, but you still have
             to pay the maintenance costs for the medical devices for cancer surgery.
             <br />
             If the government sees in the annual report that you spent more money than you were allowed to,
