@@ -1,10 +1,8 @@
 # Number forging
 
 ## Description
-
-You can have a look at the minimal example experiment [here](https://departure-point.netlify.com/).
-
-## How to set up an experiment with _magpie (quick start guide)
+(...)
+## How to run the experiment 
 
 ### Running the experiment
 
