@@ -56,7 +56,7 @@ const instructions = magpieViews.view_generator("instructions", {
             appear higher.
             <br />
             In the following you will see some of the expenses and what they are for.
-            Your task is to revise the expenses <b>upwards </b>, so that you won't loose money for
+            Your task is to revise the expenses <b>upwards</b>, so that you won't loose money for
             next year's budget.`,
   buttonText: 'go to trials'
 });
@@ -83,7 +83,7 @@ const instructions2 = magpieViews.view_generator("instructions", {
             <br />
             <br />
             In the following you will see some of the expenses and what they are for.
-            Your task is to revise the expenses  <b> downwards </b>, so that you won't loose money for
+            Your task is to revise the expenses <b>downwards</b>, so that you won't loose money for
             next year's budget.`,
   buttonText: 'go to trials'
 });
