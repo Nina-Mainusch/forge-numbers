@@ -2,7 +2,6 @@
 
 ## Description
 (...)
-## How to run the experiment 
 
 ### Running the experiment
 
