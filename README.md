@@ -1,5 +1,4 @@
-# Number forging
-
+# Forging numbers
 ## Description
 (...)
 
