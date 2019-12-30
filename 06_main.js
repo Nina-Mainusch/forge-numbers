@@ -47,8 +47,9 @@ $("document").ready(function() {
         progress_bar: {
             in: [
                 // list the view-names of the views for which you want a progress bar
-                textbox_input_2A.name,
-                textbox_input_2B.name,
+                //textbox_input_2A.name,
+                //textbox_input_2B.name,
+                trial.name,
             ],
              // Possible styles are "default", "separate" and "chunks"
             style: "separate",
