@@ -152,16 +152,37 @@ const textbox_input_2A = magpieViews.view_generator("textbox_input", {
   trials: trial_info_.textbox_input.length,
   // name should be identical to the variable name
   name: 'textbox_input_2A',
-  data: _.shuffle(trial_info_.textbox_input),
-});
+  data: _.shuffle(trial_info_.textbox_input)
+},
+{
+  stimulus_container_generator: function (config, CT) {
+    return `<div class='magpie-view'>
+    <h1 class='magpie-view-title'>${config.title}</h1>
+    <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD}</p>
+     </div>`
+  }
+}
+);
+
+
+
 
 const textbox_input_2B = magpieViews.view_generator("textbox_input", {
   // This will use all trials specified in `data`, you can user a smaller value (for testing), but not a larger value
   trials: trial_info_B.textbox_input.length,
   // name should be identical to the variable name
   name: 'textbox_input_2B',
-  data: _.shuffle(trial_info_B.textbox_input),
-});
+  data: _.shuffle(trial_info_B.textbox_input)
+},
+ {
+  stimulus_container_generator: function (config, CT) {
+       return `<div class='magpie-view'>
+    <h1 class='magpie-view-title'>${config.title}</h1>
+    <p class='magpie-view-question magpie-view-qud'>${config.data[CT].QUD}</p>
+     </div>`;
+ }
+}
+);
 
 
 // There are many more templates available:
