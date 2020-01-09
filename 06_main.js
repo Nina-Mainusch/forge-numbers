@@ -26,6 +26,7 @@ $("document").ready(function() {
 
         views_seq: [
             intro,
+            general_instructions,
             group, // instructions for sampled group
             trial, // trials for sampled group
             post_test,
