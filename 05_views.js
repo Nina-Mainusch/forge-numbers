@@ -24,37 +24,53 @@ const intro = magpieViews.view_generator("intro", {
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
   title: 'Welcome, nice to see you!',
-  text: `<br> Thank you for participating in my experiment! <br>
-	<br>
-	You will need around <b>7 minutes</b> to complete the experiment. Please make sure that you will not be distracted.
+  text: `<br> Thank you for participating in my experimen.
+	<br> <br>
+	You will need around <b>5 minutes</b> to complete the experiment. Please make sure that you will not be distracted.
   Switch off all messaging systems, your phone, any background music etc., and try to concentrate as much as possible on the task at hand.
   <br>
 	<br>
 	Click on the button below to receive your instructions.
     `,
-  buttonText: 'Show instructions'
+  buttonText: 'Show general instructions'
+});
+
+const general_instructions = magpieViews.view_generator("instructions", {
+  trials: 1,
+  name: 'general_instructions',
+  title: 'General Instructions',
+  text: `   <br />
+            In this experiment you will be presented with 9 different expenses, one at a time.
+            <br />
+            Your task is to revise each expense by <b>entering a new amount of money in the textbox</b> below the expense.
+            There are no restrictions on what you can enter,
+            but you have to type in at least one number so that a button appears at the bottom which you have to click to get to the next expense.
+            <br />
+            <br />
+            To get motivated for revising the expenses, you will next be presented with a background story.
+            <br />
+            `,
+  buttonText: 'Show background story'
 });
 
 // For most tasks, you need instructions views
 const instructions = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
-  title: 'General Instructions',
+  title: 'Specific Instructions',
   text: `   <br />
-            <b>Imagine that</b> you are the head of the Sacred Heart Hospital and responsible for the financial
+            <b>Imagine</b> that you are the head of the Sacred Heart Hospital and responsible for the financial
             matters. For the child cancer treatment section you have a budget of $1,000,000 per year.
             The government has decided to shorten your budget for the next year
-            by the amount of money that you have not spent in the last year. So if you spent
-            just $800,000 of the one million dollar, you will only get $800,000 for the next
-            year.
+            by the amount of money that you have not spent in the last year.
             <br />
             Unfortunately, you have not managed to spend the whole $1,000,000 for this year, but you know that in the
             next year you will need all the money you can get, because most of the medical
             devices for cancer surgery need to be maintained or even replaced.
             With a heavy heart but thinking about the sick children you decide that there is
-            no other way than forging some of the hospital's expenses, in order to let them
+            no other way than revising some of the hospital's expenses, in order to let them
             appear higher.
-            <br />
+            <br /> <br />
             In the following you will see some of the expenses and what they are for.
             Your task is to revise the expenses <b>upwards</b>, so that you won't loose money for
             next year's budget.`,
@@ -64,25 +80,22 @@ const instructions = magpieViews.view_generator("instructions", {
 const instructions2 = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions2',
-  title: 'General Instructions',
+  title: 'Specific Instructions',
   text: `   <br />
-            <b>Imagine that</b> you are the head of the Sacred Heart Hospital and responsible for the financial
+            <b>Imagine</b> that you are the head of the Sacred Heart Hospital and responsible for the financial
             matters. For the child cancer treatment section you have a budget of $1,000,000 per year.
-            Unfortunately, you have already spent all the money for this year, but you still have
-            to pay the maintenance costs for the medical devices for cancer surgery.
-            <br />
-            If the government sees in the annual report that you spent more money than you were allowed to,
-            they will shorten your budget for the next year by the amount of money exceeding the $1,000,000.
-            But next year you will need all the money you can get, because you want
+            The government has decided to extend your budget for the next year
+            by the amount of money that you have not spent in the last year.
+            Unfortunately, you have already spent the money for this year, but next year you will need all the money you can get, because you want
             to test the new, promising cancer treatment method that one of your doctors has developed.
             <br />
             With a heavy heart but thinking about the sick children who have no chance of curing
-            without the new treatment, you decide that there is no other way than forging
+            without the new treatment, you decide that there is no other way than revising
             some of the hospital's expenses, in order to let them appear lower.
             <br />
             <br />
             In the following you will see some of the expenses and what they are for.
-            Your task is to revise the expenses <b>downwards</b>, so that you won't loose money for
+            Your task is to revise the expenses <b>downwards</b>, so that you will get more money for
             next year's budget.`,
   buttonText: 'go to trials'
 });
