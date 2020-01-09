@@ -73,8 +73,7 @@ const instructions2 = magpieViews.view_generator("instructions", {
             <br />
             If the government sees in the annual report that you spent more money than you were allowed to,
             they will shorten your budget for the next year by the amount of money exceeding the $1,000,000.
-            This means, if you spent $1,300,000 this year, you will only get $700,000 next year.
-            You know that next year you will need all the money you can get, because you want
+            But next year you will need all the money you can get, because you want
             to test the new, promising cancer treatment method that one of your doctors has developed.
             <br />
             With a heavy heart but thinking about the sick children who have no chance of curing
