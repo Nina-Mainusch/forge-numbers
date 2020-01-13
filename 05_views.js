@@ -24,13 +24,13 @@ const intro = magpieViews.view_generator("intro", {
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
   title: 'Welcome, nice to see you!',
-  text: `<br> Thank you for participating in my experimen.
+  text: `<br> Thank you for participating in this experiment.
 	<br> <br>
 	You will need around <b>5 minutes</b> to complete the experiment. Please make sure that you will not be distracted.
   Switch off all messaging systems, your phone, any background music etc., and try to concentrate as much as possible on the task at hand.
   <br>
 	<br>
-	Click on the button below to receive your instructions.
+	To proceed, please click on the button which will appear after you have entered your Prolific ID.
     `,
   buttonText: 'Show general instructions'
 });
@@ -40,15 +40,14 @@ const general_instructions = magpieViews.view_generator("instructions", {
   name: 'general_instructions',
   title: 'General Instructions',
   text: `   <br />
-            In this experiment you will be presented with 9 different expenses, one at a time.
+            In this experiment you will be asked to make changes to the financial records of an institution.
             <br />
-            Your task is to revise each expense by <b>entering a new amount of money in the textbox</b> below the expense.
-            There are no restrictions on what you can enter,
-            but you have to type in at least one number so that a button appears at the bottom which you have to click to get to the next expense.
+            Concretely, you will see 9 different expenses of that institution. Your task is to revise each expense by <b>entering a new amount of money in the textbox</b> below the expense.
+            There are no restrictions on what you can enter, but you have to type in at least one number so that a button appears at the bottom which you have to click to get to the next expense. <strong>We kindly ask you to please enter numeric values only (no words, letters or special characters)</strong>!
             <br />
             <br />
-            To get motivated for revising the expenses, you will next be presented with a background story.
-            <br />
+            To get motivated for revising the expenses, you will next be presented with a background story. Please read the background story carefully to better understand your task.
+            <br />      
             `,
   buttonText: 'Show background story'
 });
@@ -73,7 +72,10 @@ const instructions = magpieViews.view_generator("instructions", {
             <br /> <br />
             In the following you will see some of the expenses and what they are for.
             Your task is to revise the expenses <b>upwards</b>, so that you won't loose money for
-            next year's budget.`,
+            next year's budget.
+            <br />
+            <br />
+            When revising the numbers, <strong>make sure that the manipulation is not blatantly obvious</strong> by looking at what the expense given was for!`,
   buttonText: 'go to trials'
 });
 
@@ -95,8 +97,10 @@ const instructions2 = magpieViews.view_generator("instructions", {
             <br />
             <br />
             In the following you will see some of the expenses and what they are for.
-            Your task is to revise the expenses <b>downwards</b>, so that you will get more money for
-            next year's budget.`,
+            Your task is to revise the expenses <b>downwards</b>, so that you will get more money for next year's budget.
+            <br />
+            <br />
+            When revising the numbers, <strong>make sure that the manipulation is not blatantly obvious</strong> by looking at what the expense given was for!`,
   buttonText: 'go to trials'
 });
 
